@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{title}}
+    <span>{{title}}</span>
+    <div>{{title}}</div>
+</div>
 
+<script src="../vue.js"></script>
+<script>
+    let option={
+        data:{
+            title:"这是vue初始化"
+        }
+    }
+    //使用vue框架   并传一个对象
+    let vm=new Vue(option);
+
+    //绑定视图
+    vm.$mount("#app");
+
+</script>
+</body>
+</html>
