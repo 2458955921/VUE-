@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-div :num1="num" :str1="str" :bool1="bool" :arr1="arr" :obj1="obj"></my-div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+
+    Vue.component("my-div",{
+        props:["num1","str1","bool1","arr1","obj1"],
+        template:`
+            <div>
+            {{num1}}
+            <br>
+            {{str1}}
+            <br>
+            {{bool1}}
+            <br>
+            <div v-for="(item,index) in arr1" :key="index">
+              <span>{{item}}</span>
+
+            </div>
+            <br>
+            {{obj1.a}}
+
+            </div>
+        `
+    })
+
+    new Vue({
+        data:{
+            num:"10",
+            str:"abcdefg",
+            bool:true,
+            arr:["我卖k","玉什么","正义之子","冲锋战士"],
+            obj:{
+                a:"aa",
+                b:"bb",
+                c:"cc"
+
+            }
+
+        }
+    }).$mount("#app")
+</script>
+</body>
+</html>
