@@ -6,8 +6,8 @@
 
 2.全局变量传值第二种. Test2
 
-![image-20230830143819603](/Users/coast/Library/Application Support/typora-user-images/image-20230830143819603.png)
+![image-20230830143819603](./img/img.png)
 
 3. 全局变量传值第三种  test3
 
-   ![image-20230830143840650](/Users/coast/Library/Application Support/typora-user-images/image-20230830143840650.png)
+   ![image-20230830143840650](./img/img_1.png)
