@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-div>
+
+    </my-div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    Vue.component("my-div",{
+
+        data(){
+            return{
+              txt:"我是txt，第二种类型"
+            };
+        },
+        template:`<div>{{txt}}</div>`
+
+    })
+    new Vue({
+
+    }).$mount("#app")
+</script>
+</body>
+</html>
